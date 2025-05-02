@@ -107,7 +107,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		        XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_e,      spawn,          {.v = filemanrootcmd } },
 	{ MODKEY,                       XK_n,      spawn,          {.v = firefoxcmd } },
-
+	{ MODKEY,                       XK_n,      view,           {.ui = 1 << 2} },
 };
 
 /* button definitions */
