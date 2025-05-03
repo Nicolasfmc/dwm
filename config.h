@@ -65,6 +65,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont}
 static const char *termcmd[]  = { "st", NULL };
 static const char *filemanrootcmd[] = { "thunar", "/root", NULL };
 static const char *firefoxcmd[] = { "firefox", NULL };
+static const char *codecmd[] = { "code", "--no-sandbox", "--user-data-dir=/tmp", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -108,6 +109,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		        XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_e,      spawn,          {.v = filemanrootcmd } },
 	{ MODKEY,                       XK_n,      spawn,          {.v = firefoxcmd } },
+	{ MODKEY,                       XK_c,      spawn,          {.v = codecmd } },
 };
 
 /* button definitions */
