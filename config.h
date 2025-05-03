@@ -65,7 +65,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont}
 static const char *termcmd[]  = { "st", NULL };
 static const char *filemanrootcmd[] = { "thunar", "/root", NULL };
 static const char *firefoxcmd[] = { "firefox", NULL };
-static const char *codecmd[] = { "code --no-sandbox --user-data-dir=/tmp", NULL };
+static const char *codecmd[] = { "code", "--no-sandbox", "--user-data-dir=/tmp", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
